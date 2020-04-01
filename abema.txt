@@ -1,0 +1,2 @@
+!挂日本梯子然后用过滤器就好
+||abema.tv*$replace=/"isAllowed":false\,"status":true};/"isAllowed":true\,"status":false};/
