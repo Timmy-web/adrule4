@@ -262,7 +262,7 @@ function file_video(path){
 	var url = window.location.origin + path;
 	var playBtn = `<a class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" href="potplayer://${url}"><i class="mdui-icon material-icons">&#xe038;</i>在 potplayer 中播放</a>`;
 	if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) { //移动端
-	    playBtn = ` <a class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" href="nplayer-http://${url}#Intent"><i class="mdui-icon material-icons">&#xe039;</i>在nPlayer中播放</a>`;
+	    playBtn = `<a class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" href="intent:${url}#Intent;package=com.newin.nplayer.pro;S.title=${path};end"><i class="mdui-icon material-icons">&#xe039;</i>在nPlayer中播放</a>`;
 	}
 	var content = `
 <div class="mdui-container-fluid">
