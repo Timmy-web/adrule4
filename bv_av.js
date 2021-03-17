@@ -1,3 +1,6 @@
+<input id="inb" type="text" name="inp" value="">
+<button onclick="run()">转换</button>
+<script type ="text/javascript" language="javascript">
 var inp = new String;
         var table = "fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF",
         tr = new Object();
@@ -52,3 +55,4 @@ function lg(s){
 if(s.substr(0,1) == 'BV' || s.substr(0,1) == 'av' || s.substr(0,1) == 'AV') return true;
 else return false;
 }
+</script>
