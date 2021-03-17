@@ -1,6 +1,3 @@
-<input id="inb" type="text" name="inp" value="">
-<button onclick="run()">转换</button>
-<script type ="text/javascript" language="javascript">
 var inp = new String;
         var table = "fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF",
         tr = new Object();
@@ -26,7 +23,8 @@ r[s[i]] = table[Math.floor(x / 58 ** i) % 58];
 return r.join("");
 }
 function run(){
-inp = String(document.getElementById("inb").value);
+inp=document.getElementsByTagName('script');
+//inp = String(document.getElementById("inb").value);
 if(!lg(inp)){
 pri("请输入正确的AV/BV号")
 }
@@ -49,10 +47,10 @@ function pd(s){
 return s.indexOf("BV") != -1;
 }
 function pri(s){
-document.getElementById("inb").value = s;
+document.write(s);
+//document.getElementById("inb").value = s;
 }
 function lg(s){
 if(s.substr(0,1) == 'BV' || s.substr(0,1) == 'av' || s.substr(0,1) == 'AV') return true;
 else return false;
 }
-</script>
