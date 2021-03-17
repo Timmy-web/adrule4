@@ -23,11 +23,7 @@ r[s[i]] = table[Math.floor(x / 58 ** i) % 58];
 return r.join("");
 }
 function run(){
-inp=document.getElementsByTagName('script');
-//inp = String(document.getElementById("inb").value);
-if(!lg(inp)){
-pri("请输入正确的AV/BV号")
-}
+inp=document.getElementById('testScript').getAttribute('data');
 var out = new String;
 if(pd(inp)){
 // 为BV号
@@ -48,9 +44,9 @@ return s.indexOf("BV") != -1;
 }
 function pri(s){
 document.write(s);
-//document.getElementById("inb").value = s;
 }
 function lg(s){
 if(s.substr(0,1) == 'BV' || s.substr(0,1) == 'av' || s.substr(0,1) == 'AV') return true;
 else return false;
 }
+run()
