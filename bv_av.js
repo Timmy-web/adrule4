@@ -1,3 +1,4 @@
+//<script id="testScript" type="text/javascript"  data="av374647129"></scirpt>
 var inp = new String;
         var table = "fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF",
         tr = new Object();
